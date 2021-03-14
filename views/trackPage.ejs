@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracker-Tracks</title>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      href="https://allfont.net/allfont.css?fonts=arizonia"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Linking stylesheet -->
+    <link rel="stylesheet" href="/css/track_page.css" />
+  </head>
+
+  <body>
+    <!-- Nav-bar -->
+    <div class="nav-bar">
+      <div class="nav-brand">
+        Tracker
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/dashboard"
+            ><i class="fa fa-home" aria-hidden="true"></i> Home</a
+          >
+        </li>
+        <li>
+          <a href="/dashboard/<%= userId%>/visualise">
+            <i class="fa fa-line-chart"></i>
+            Visualise</a
+          >
+        </li>
+        <li>
+          <a href="/logout">
+            <i class="fa fa-sign-out"></i>
+            Logout</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <h5>Here is your <%= trackName%> track</h5>
+
+      <div class="description">
+        <h3><%= trackName%></h3>
+        <div class="highlight">
+          <h5><span>Category : </span> <%= category%></h5>
+          <h5><span>Goal : </span> <%= goal%></h5>
+          <h5><span>Comments : </span> <%= comments%></h5>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h5>Add new data:</h5>
+
+        <!-- success messages -->
+        <% if (success_msg.length > 0) { %>
+        <div
+          class="alert alert-success alert-dismissible fade show"
+          role="alert"
+        >
+          <p><%= success_msg %></p>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <% } %>
+
+        <!-- unsucessful error messages -->
+        <% if (error_msg.length > 0) { %>
+        <div
+          class="alert alert-danger alert-dismissible fade show"
+          role="alert"
+        >
+          <p><%= error_msg %></p>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <% } %>
+
+        <form action="/dashboard/<%= userId%>/submit/<%= _id%>" method="POST">
+          <div class="form-group">
+            <label for="dayNum">Day: </label>
+            <input
+              name="day"
+              class="form-control"
+              placeholder="Day"
+              type="text"
+              autocomplete="off"
+              required
+            />
+
+            <label for="dayNum">Hours spent: </label>
+            <input
+              name="hours"
+              class="form-control"
+              placeholder="Hours"
+              type="text"
+              autocomplete="off"
+              required
+            />
+
+            <label for="remark">Remarks: </label>
+            <textarea
+              name="remarks"
+              class="form-control"
+              placeholder="Remark"
+            ></textarea>
+
+            <button type="submit" class="btn btn-block">
+              Add Data
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <h5
+        style="
+          font-weight: bold;
+          color: black;
+          font-size: 1.4rem;
+          text-align: center;
+        "
+      >
+        Added Data:
+      </h5>
+
+      <div class="card-section">
+        <% if(data) { %> <% Object.values(data).forEach((day)=>{ %>
+        <div class="card">
+          <div class="card-header">
+            <%= day[0] %>
+          </div>
+          <div class="card-body">
+            <p class="card-text"><span>Time dedicated :</span> <%= day[1] %></p>
+            <p class="card-text"><span>Comment :</span> <%= day[2] %></p>
+          </div>
+        </div>
+        <% }) %> <%} else{ %>
+        <p style="margin: auto; color: #0f4c75; font-weight: bold;">
+          No data Submitted
+        </p>
+        <%}%>
+      </div>
+    </div>
+
+    <p class="copyright">
+      Radd, Copyright &#169; 2020, All rights reserved
+    </p>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

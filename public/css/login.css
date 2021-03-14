@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left, #043a5e 0%, #08619c 100%);
+  margin-top: 0;
+  border: 2px solid #0f4c75;
+}
+
+.focus-section {
+  width: 86vw;
+  height: 86vh;
+  border-radius: 20px;
+  margin: auto;
+  background-color: white;
+  margin-top: 7vh;
+  display: flex;
+}
+
+.left-image {
+  width: 35%;
+  background-image: url("../images/login_images/undraw_digital_nomad_9kgl.svg");
+  background-repeat: no-repeat;
+  background-size: 470px 500px;
+  color: #08619c;
+  text-align: center;
+}
+
+.left-image h3 {
+  margin-top: 31rem;
+  text-shadow: #0f4c75;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.left-image p {
+  padding-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.login-side {
+  width: 65%;
+  padding: 2.5rem 1rem;
+}
+
+.login-side .brand-logo {
+  background-color: #0f4c75;
+  font-size: 2rem;
+  color: white;
+  font-family: "Arizonia", cursive;
+  display: inline;
+  padding: 0.4rem 0.7rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.login-side h3 {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.login-side .head-content {
+  font-size: 1.3rem;
+  margin-left: 13rem;
+  color: black;
+}
+
+.form-group {
+  width: 85%;
+  margin-left: 2.5rem;
+}
+
+.form-group label {
+  margin-top: 1.2rem;
+}
+
+.form-group button {
+  width: 100%;
+  background-color: #08619c;
+  color: white;
+  margin-top: 1.7rem;
+  border: none;
+  padding: 0.35rem;
+  border-radius: 7px;
+}
+
+.form-group button:hover {
+  background-color: #0f4c75;
+}
+
+.end-msg {
+  margin-left: 2.5rem;
+  color: black;
+}

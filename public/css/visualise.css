@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ////////////////////////         Navbar       //////////////////////////////////////////// */
+.nav-bar {
+  color: rgb(255, 255, 255);
+  background-color: #0f4c75;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 4rem;
+  height: 11vh;
+}
+
+.nav-brand {
+  font-size: 3.2rem;
+  font-family: "Arizonia", cursive;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li a {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  padding: 0.2rem 3.5rem;
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-links li a:hover {
+  color: #afb3ca;
+  text-decoration: none;
+}
+
+/* ////////////////////////           Cards         ///////////////////////////////*/
+.main-head {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0f4c75;
+  margin: 2rem 3rem 0.2rem;
+}
+
+.subheading {
+  font-size: 1.2rem;
+  color: #0f4c75;
+  margin: 0.2rem 3rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.track-card {
+  border: 2px solid #3f3d56;
+  background-color: #e1e0ee;
+  width: 40vw;
+
+  border-radius: 15px;
+  margin: auto;
+  padding: 1.2rem 1.6rem;
+  margin: 2rem 3rem;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+.track-card:hover {
+  transform: scale(1.02);
+}
+
+.track-card h6 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0f4c75;
+  margin-bottom: 1.3rem;
+}
+
+.track-card p {
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+.track-card p span {
+  color: #0f4c75;
+  font-weight: bold;
+}
+
+.track-card a {
+  text-decoration: none;
+  border: 2px solid #0f4c75;
+  color: #0f4c75;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  width: 8vw;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.track-card a:hover {
+  background-color: #0f4c75;
+  color: white;
+}
+
+/* Copyright strip */
+.copyright {
+  color: #0f4c75;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1.2rem 0 0;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}

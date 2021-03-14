@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracker-Tracks</title>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Linking stylesheet -->
+    <link rel="stylesheet" href="/css/visualise.css" />
+  </head>
+
+  <body>
+    <!-- Nav-bar -->
+    <div class="nav-bar">
+      <div class="nav-brand">
+        Tracker
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/dashboard"
+            ><i class="fa fa-home" aria-hidden="true"></i> Home</a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-line-chart"></i>
+            Visualise</a
+          >
+        </li>
+        <li>
+          <a href="/logout">
+            <i class="fa fa-sign-out"></i>
+            Logout</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <h2 class="main-head">Visualise</h2>
+    <h6 class="subheading">Select a track to visualise:</h6>
+
+    <div class="wrapper">
+      <% if(tracks.length !== 1){%> <% tracks.forEach((track)=>{ %> <%
+      if(!track.username){ %>
+      <a
+        class="card_wrapper"
+        style="text-decoration: none; color: #0f4c75;"
+        href="/dashboard/<%= tracks[tracks.length-1]._id %>/visualise/<%= track._id%>"
+      >
+        <div class="track-card">
+          <div class="track-title">
+            <h6><%= track.trackName %></h6>
+          </div>
+          <div class="track-body">
+            <p><span>Category :</span> <%= track.category %></p>
+            <p><span>Target :</span> <%= track.goal %></p>
+            <p>
+              <span>Comments :</span>
+              <%= track.comments %>
+            </p>
+          </div>
+        </div>
+      </a>
+      <% } %> <% })%> <% } %>
+    </div>
+
+    <% if(tracks.length === 1) { %>
+    <div class="card" style="width: 70vw; margin: auto;">
+      <h5 class="card-text" style="color: #0f4c75; font-weight: bold;">
+        No tracks started..
+      </h5>
+      <p class="card-text" style="color: #0f4c75;">
+        Please click on add track to create more tracks
+      </p>
+    </div>
+    <% } %>
+
+    <p class="copyright">
+      Radd, Copyright &#169; 2020, All rights reserved
+    </p>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

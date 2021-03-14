@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to left, #043a5e 0%, #08619c 100%);
+  margin-top: 0;
+  border: 2px solid #0f4c75;
+}
+
+.focus-section {
+  width: 86vw;
+  height: 90vh;
+  border-radius: 20px;
+  margin: auto;
+  background-color: white;
+  margin-top: 5vh;
+  display: flex;
+}
+
+.left-image {
+  width: 35%;
+  background-image: url("../images/register_images/undraw_setup_analytics_8qkl.svg");
+  background-repeat: no-repeat;
+  background-size: 490px 500px;
+  color: #08619c;
+  text-align: center;
+}
+
+.left-image h3 {
+  margin-top: 31rem;
+  text-shadow: #0f4c75;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.left-image p {
+  padding-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.login-side {
+  width: 65%;
+  padding: 0rem 1rem;
+  align-items: center;
+}
+
+.login-side .brand-logo {
+  background-color: #0f4c75;
+  font-size: 2rem;
+  color: white;
+  font-family: "Arizonia", cursive;
+  display: inline;
+  padding: 0.4rem 0.7rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+}
+
+.login-side h3 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.login-side .head-content {
+  font-size: 1.3rem;
+  margin-left: 11rem;
+  color: black;
+}
+
+.form-group {
+  width: 85%;
+  margin-left: 2.5rem;
+}
+
+.form-group label {
+  margin-top: 0.7rem;
+  margin-bottom: 0.1rem;
+  font-size: 1rem;
+  font-size: 0.9rem;
+}
+
+.form-group .form-control {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.form-group button {
+  font-size: 0.9rem;
+  width: 100%;
+  background-color: #08619c;
+  color: white;
+  border: none;
+  margin-top: 0.5rem;
+  padding: 0.35rem;
+  border-radius: 7px;
+}
+
+.form-group button:hover {
+  background-color: #0f4c75;
+}
+
+.end-msg {
+  margin-left: 2.5rem;
+  color: black;
+}

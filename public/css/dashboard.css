@@ -1,0 +1,226 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ////////////////////////         Navbar       //////////////////////////////////////////// */
+.nav-bar {
+  color: rgb(255, 255, 255);
+  background-color: #0f4c75;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 4rem;
+  height: 11vh;
+}
+
+.nav-brand {
+  font-size: 3.2rem;
+  font-family: "Arizonia", cursive;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li a {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  padding: 0.2rem 3.5rem;
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-links li a:hover {
+  color: #afb3ca;
+  text-decoration: none;
+}
+
+/* Greeting section */
+
+.first-section {
+  display: flex;
+  height: 95vh;
+}
+
+.greeting {
+  width: 50vw;
+  padding: 3rem;
+  color: #0f4c75;
+}
+
+.image {
+  width: 50vw;
+  padding: 1rem;
+  color: #0f4c75;
+}
+
+.greeting h5 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.greeting p {
+  font-size: 1.2rem;
+}
+
+.card {
+  color: white;
+  padding: 2rem 1rem 1rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+}
+
+.card h6 {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.card ul {
+  font-size: 1.1rem;
+  list-style: none;
+  line-height: 2rem;
+}
+
+.first {
+  background-color: #0f4c75;
+  margin-left: 1.5rem;
+  width: 26vw;
+  box-shadow: 5px 5px 3px 3px #a5a0fc;
+}
+
+.last {
+  background-color: #3f3d56;
+  margin-left: 5rem;
+  width: 30vw;
+  box-shadow: 5px 5px 3px 3px #4d86ac;
+}
+
+.image img {
+  height: 400px;
+  position: relative;
+  margin-top: 4rem;
+  margin-left: 4rem;
+  border-radius: 15%;
+}
+
+.image-decoration1 {
+  position: absolute;
+  top: 22%;
+  right: 11%;
+  height: 400px;
+  width: 650px;
+  background-color: #3f3d56;
+  border-radius: 15%;
+  transform: rotate(-15deg);
+  z-index: -1;
+}
+
+.image-decoration2 {
+  position: absolute;
+  top: 22%;
+  right: 11%;
+  height: 400px;
+  width: 650px;
+  border: 4px solid #6c63ff;
+  background-color: #6c63ff;
+  border-radius: 15%;
+  transform: rotate(9deg);
+  z-index: -2;
+  box-shadow: 10px 10px 10px 10px #a5a0fc;
+}
+
+/*/////////////////////////////////////   Second-section   ////////////////////////////////////////*/
+
+.second-section h3 {
+  font-size: 2rem;
+  color: #0f4c75;
+  text-align: center;
+  font-weight: bold;
+}
+
+.track-card {
+  border: 2px solid #3f3d56;
+  background-color: #e1e0ee;
+  width: 75vw;
+  border-radius: 15px;
+  margin: auto;
+  padding: 1.2rem 1.6rem;
+  margin-top: 2rem;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+.track-card:hover {
+  transform: scale(1.02);
+}
+
+.track-card h6 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #0f4c75;
+  margin-bottom: 1.3rem;
+}
+
+.track-card p {
+  line-height: 1rem;
+  font-size: 1rem;
+}
+
+.track-card p span {
+  color: #0f4c75;
+  font-weight: bold;
+}
+
+.track-card a {
+  text-decoration: none;
+  border: 2px solid #0f4c75;
+  color: #0f4c75;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  width: 8vw;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.track-card a:hover {
+  background-color: #0f4c75;
+  color: white;
+}
+
+.end-btns {
+  width: 40vw;
+  margin: auto;
+  margin-top: 2rem;
+  justify-content: space-around;
+}
+
+.end-btn {
+  display: inline-block;
+  border: 2px solid #0f4c75;
+  color: #0f4c75;
+  padding: 0.3rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0 4.2rem;
+}
+
+.end-btn:hover {
+  background-color: #0f4c75;
+  color: white;
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 4rem;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracker</title>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking stylesheet-->
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <div class="nav-bar">
+      <div class="nav-brand">
+        Tracker
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#second-page">What can tracker do?</a></li>
+        <li><a href="#third-page">How it works?</a></li>
+      </ul>
+    </div>
+
+    <div class="landing-page">
+      <div class="landing-info">
+        <h3>Ready for Change?</h3>
+        <p>
+          We keep track of your activities for you to rate and remark, so that
+          you can become your ideal self. Register now to join.
+        </p>
+        <a href="/login" class="btn btn-left">Login</a>
+        <a href="/register" class="btn">Register</a>
+      </div>
+      <div class="landing-image">
+        <img
+          src="/images/main_images/landing-image.svg"
+          alt="Landing page image"
+        />
+      </div>
+    </div>
+
+    <!-- Second Page -->
+    <div class="second-page">
+      <h1 id="second-page">What can tracker do?</h1>
+      <div class="cards-section">
+        <!-- Study -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/main_images/undraw_reading_time_gvg0.png"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Study</h5>
+            <p class="card-text">
+              Track your reading time and find out where you are lacking in your
+              preparation
+            </p>
+          </div>
+        </div>
+
+        <!-- Music -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/main_images/undraw_listening_1u79.png"
+            alt="Music"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Music</h5>
+            <p class="card-text">
+              Track your music practice sessions and improve your music skill
+            </p>
+          </div>
+        </div>
+
+        <!-- Exercise -->
+        <div class="card">
+          <img
+            class="card-img-top"
+            src="./images/main_images/undraw_working_out_6psf.png"
+            alt="Exercise"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Exercise</h5>
+            <p class="card-text">
+              Track your workout time and help youself become the fittest you
+              have ever been
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Page -->
+    <div class="third-page">
+      <h1 id="third-page">How it works?</h1>
+
+      <!-- Blocks -->
+
+      <!-- register -->
+      <div class="block right">
+        <div class="register image">
+          <img
+            src="./images/main_images/undraw_fill_forms_yltj.png"
+            alt="Register"
+          />
+        </div>
+        <div class="register info">
+          <h3>Register with Tracker</h3>
+          <p>
+            Register with your email in the register page. Click on the button
+            below to register now and access the content. Already registered?!
+            Login then.
+          </p>
+          <a href="/register" class="btn"> Register</a>
+          <a href="/login" class="btn"> Login</a>
+        </div>
+      </div>
+
+      <!-- Tracks -->
+      <div class="block left">
+        <div class="track info">
+          <h3>Add tracks to activities</h3>
+          <p>
+            Add tracks to keep an eye on the activities of your choosing in a
+            category. While adding tracks you can set your targets for that
+            acitivity and add comments
+          </p>
+        </div>
+
+        <div class="track image">
+          <img
+            src="./images/main_images/undraw_activity_tracker_1l9o.png"
+            alt="Add Track"
+          />
+        </div>
+      </div>
+
+      <!-- Add data -->
+      <div class="block right">
+        <div class="data image">
+          <img
+            src="./images/main_images/undraw_visual_data_b1wx.png"
+            alt="Data"
+          />
+        </div>
+        <div class="data info">
+          <h3>Add data to visualize</h3>
+          <p>
+            Select a track and add data to that particular track and save. This
+            data will be used by tracker to visually display graphs and charts,
+            which can in-turn be used to find your shortcomings.
+          </p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Radd, Copyright &#169; 2020, All rights reserved
+        </p>
+      </div>
+    </div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

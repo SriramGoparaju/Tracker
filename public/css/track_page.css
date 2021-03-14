@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ////////////////////////         Navbar       //////////////////////////////////////////// */
+.nav-bar {
+  color: rgb(255, 255, 255);
+  background-color: #0f4c75;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 4rem;
+  height: 11vh;
+}
+
+.nav-brand {
+  font-size: 3.2rem;
+  font-family: "Arizonia", cursive;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li a {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  padding: 0.2rem 3.5rem;
+  margin-top: 1.3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-links li a:hover {
+  color: #afb3ca;
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+/* /////////////////////////////////    Main      ////////////////////////////////////////////*/
+.main h5 {
+  margin: 0.6rem 3rem;
+  color: #0f4c75;
+}
+
+.description {
+  margin: 0.2rem 4rem;
+}
+
+.description h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.description .highlight h5 {
+  color: black;
+  font-size: 1rem;
+  margin-top: 0.9rem;
+}
+
+.highlight {
+  background-color: #e3e5ec;
+  border-radius: 10px;
+  padding: 0.8rem 0.3rem;
+  margin: 0 4rem;
+}
+
+.description .highlight h5 span {
+  color: #0f4c75;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* //////////////////////////////////       Form section              ////////////////////////// */
+
+.form-section {
+  margin: 2rem 8rem;
+  border-top: 3px solid #0f5c76;
+  border-bottom: 3px solid #0f5c76;
+}
+
+.form-section h5 {
+  margin: 1.5rem 0 0.3rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+  color: black;
+}
+
+.form-section label {
+  margin: 1rem 0 0.2rem;
+  color: #0f4c75;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.form-section input,
+.form-section textarea {
+  border-color: #666;
+}
+
+.btn {
+  background-color: #0f5c76;
+  margin-top: 1rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.btn:hover {
+  background-color: #0f4c75;
+  color: white;
+}
+
+/* //////////////////////////////////////      Card             ////////////////////////////*/
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 310px;
+  margin: 1rem 2.1rem;
+  color: black;
+}
+
+.card-header {
+  color: #0f4c75;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card-text span {
+  color: #0f4c75;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}
